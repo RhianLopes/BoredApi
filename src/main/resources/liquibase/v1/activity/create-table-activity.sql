@@ -1,3 +1,8 @@
+
+CREATE DATABASE bored;
+
+USE bored;
+
 CREATE TABLE activity (
     id              BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
     activity        VARCHAR(255) NOT NULL,
