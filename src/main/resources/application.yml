@@ -5,13 +5,13 @@ server:
 
 spring:
   datasource:
-    driver-class-name: org.postgresql.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
     host: localhost
-    url: ${JDBC_DATABASE_URL:jdbc:postgresql://localhost:3306/bored?useTimezone=true&serverTimezone=America/Belem&createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true}
-    username: ${JDBC_DATABASE_USERNAME:root}
-    password: ${JDBC_DATABASE_PASSWORD:toor
+    url: ${DATABASE_URL:jdbc:mysql://localhost:3306/bored?useTimezone=true&serverTimezone=America/Belem&createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true}
+    username: root
+    password: toor
   jpa:
-    database: postgresql
+    database: mysql
     properties.hibernate:
       show_sql: true
       format_sql: true
@@ -19,5 +19,5 @@ spring:
     url: ${spring.datasource.url}
     default-schema: bored
     change-log: classpath:/liquibase/liquibase-changelog.yml
-    user: ${spring.datasource.username}
-    password: ${spring.datasource.password}
+    user: root
+    password: toor
