@@ -16,7 +16,7 @@ public class ActivityController {
     private final ActivityService activityService;
 
     @GetMapping
-    public List<ActivitySearchResponseDto> search(@RequestParam(name = "type", required = false) String type) {
+    public ActivitySearchResponseDto search(@RequestParam(name = "type", required = false) String type) {
         return activityService.search(type);
     }
 

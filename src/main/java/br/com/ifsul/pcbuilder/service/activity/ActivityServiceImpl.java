@@ -5,9 +5,12 @@ import br.com.ifsul.pcbuilder.dto.ActivitySearchResponseDto;
 import br.com.ifsul.pcbuilder.mapper.ActivityMapper;
 import br.com.ifsul.pcbuilder.model.Activity;
 import br.com.ifsul.pcbuilder.repository.ActivityRepository;
+import liquibase.pro.packaged.A;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
@@ -21,16 +24,18 @@ public class ActivityServiceImpl implements ActivityService {
     private final ActivityMapper mapper;
 
     @Override
-    public List<ActivitySearchResponseDto> search(String type) {
-        List<Activity> response;
+    public ActivitySearchResponseDto search(String type) {
+        Activity response;
         if (Objects.isNull(type)) {
-            response = repository.findAll();
+            response = repository.findAll().stream()
+                    .findFirst()
+                    .orElse(new Activity());
         } else {
-            response = repository.findAllByType(type);
+            response = repository.findAllByType(type).stream()
+                    .findFirst()
+                    .orElse(new Activity());
         }
-        return response.stream()
-                .map(mapper::mapToActivitySearchResponseDto)
-                .collect(Collectors.toList());
+        return mapper.mapToActivitySearchResponseDto(response);
     }
 
     @Override

@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface ActivityService {
 
-    List<ActivitySearchResponseDto> search(String type);
+    ActivitySearchResponseDto search(String type);
 
     ActivitySearchResponseDto searchById(Long id);
 
