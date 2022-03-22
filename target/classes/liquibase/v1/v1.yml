@@ -1,8 +1,0 @@
-databaseChangeLog:
-  - changeSet:
-      id: create-table-activity
-      author: rhian.costa
-      changes:
-        - sqlFile:
-            path: activity/create-table-activity.sql
-            relativeToChangelogFile: true
