@@ -47,7 +47,7 @@ public class ActivityServiceImpl implements ActivityService {
 
     @Override
     public void create(ActivityCreationRequestDto requestDto) {
-        final var activity = mapper.mapFromActivityCreationRequestDto(requestDto);
+        final Activity activity = mapper.mapFromActivityCreationRequestDto(requestDto);
         repository.save(activity);
     }
 }
