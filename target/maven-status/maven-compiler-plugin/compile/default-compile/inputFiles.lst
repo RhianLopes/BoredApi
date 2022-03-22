@@ -1,0 +1,17 @@
+/Users/rhian.costa/GITHUB/PCBuilder/api/src/main/java/br/com/ifsul/pcbuilder/dto/PCComponentCreationRequestDto.java
+/Users/rhian.costa/GITHUB/PCBuilder/api/src/main/java/br/com/ifsul/pcbuilder/controller/PCController.java
+/Users/rhian.costa/GITHUB/PCBuilder/api/src/main/java/br/com/ifsul/pcbuilder/service/pc/PCService.java
+/Users/rhian.costa/GITHUB/PCBuilder/api/src/main/java/br/com/ifsul/pcbuilder/repository/PCComponentRepository.java
+/Users/rhian.costa/GITHUB/PCBuilder/api/src/main/java/br/com/ifsul/pcbuilder/model/PCComponent.java
+/Users/rhian.costa/GITHUB/PCBuilder/api/src/main/java/br/com/ifsul/pcbuilder/service/pc/PCServiceImpl.java
+/Users/rhian.costa/GITHUB/PCBuilder/api/src/main/java/br/com/ifsul/pcbuilder/service/pccomponent/PCComponentServiceImpl.java
+/Users/rhian.costa/GITHUB/PCBuilder/api/src/main/java/br/com/ifsul/pcbuilder/service/pccomponent/PCComponentService.java
+/Users/rhian.costa/GITHUB/PCBuilder/api/src/main/java/br/com/ifsul/pcbuilder/controller/PCComponentController.java
+/Users/rhian.costa/GITHUB/PCBuilder/api/src/main/java/br/com/ifsul/pcbuilder/model/Category.java
+/Users/rhian.costa/GITHUB/PCBuilder/api/src/main/java/br/com/ifsul/pcbuilder/config/WebConfig.java
+/Users/rhian.costa/GITHUB/PCBuilder/api/src/main/java/br/com/ifsul/pcbuilder/dto/PCComponentSearchResponseDto.java
+/Users/rhian.costa/GITHUB/PCBuilder/api/src/main/java/br/com/ifsul/pcbuilder/model/Compatibility.java
+/Users/rhian.costa/GITHUB/PCBuilder/api/src/main/java/br/com/ifsul/pcbuilder/specification/PCComponentSpecification.java
+/Users/rhian.costa/GITHUB/PCBuilder/api/src/main/java/br/com/ifsul/pcbuilder/dto/PCBuildingRequestDto.java
+/Users/rhian.costa/GITHUB/PCBuilder/api/src/main/java/br/com/ifsul/pcbuilder/mapper/PCComponentMapper.java
+/Users/rhian.costa/GITHUB/PCBuilder/api/src/main/java/br/com/ifsul/pcbuilder/Application.java
