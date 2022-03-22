@@ -1,5 +1,5 @@
 
-CREATE DATABASE bored;
+CREATE SCHEMA bored;
 
 USE bored;
 
